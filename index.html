@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Currency Converter</title>
+</head>
+<body>
+  <div class="converter-container">
+    <h1 id="ash">Currency Converter</h1>
+    <div class="input-container">
+      <label for="fromCurrency">From:</label>
+      <select id="fromCurrency"></select>&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+    <div class="input-container">
+      <label for="toCurrency">To:</label>
+      <select id="toCurrency"></select>&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="result">Result:</label>
+      <input type="text" id="result" readonly>
+    </div>
+    <button onclick="convertCurrency()">Convert</button>
+    <div class="copyright-message">Copyright and designed by <span>&#169;</span> Ashish Singh</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
